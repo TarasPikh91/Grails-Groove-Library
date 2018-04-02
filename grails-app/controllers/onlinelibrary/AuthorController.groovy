@@ -10,7 +10,7 @@ class AuthorController {
     def create = {}
 
     def save = {
-        def book = Book.findById(params.id)
+        def book = Book.findByTitle(params.title)
         def author = new Author(params)
         if (book){
             author.addToBook(book)

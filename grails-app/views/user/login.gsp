@@ -34,6 +34,9 @@
                 <input class="save btn btn-default" type="submit" value="Login" />
             </span>
         </div>
+        <div>
+            <a <g:link controller="user" action="create">Create new account</g:link></a>
+        </div>
     </g:form>
     </div>
 </div>

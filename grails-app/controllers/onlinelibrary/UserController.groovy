@@ -9,6 +9,15 @@ class UserController {
     }
 
     def login = {}
+
+    def create={}
+
+    def save={
+        def user = new User(params)
+        user.save flush: true, failOnError: true
+        redirect action: 'login', id: user.id
+    }
+
     def authenticate = {
         def user = User.findByLoginAndPassword(params.login, params.password)
         if(user){
@@ -27,7 +36,7 @@ class UserController {
     }
 
     def beforeInterceptor = [action:this.&auth,
-                             except:["login", "authenticate", "logout"]]
+                             except:["login", "authenticate", "logout","create", "save"]]
     def auth() {
         if( !(session?.user?.role == "admin") ){
             flash.message = "You must be an administrator to perform that task."

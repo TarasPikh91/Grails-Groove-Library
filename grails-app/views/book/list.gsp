@@ -22,6 +22,7 @@
                 <th scope="col">Count of page</th>
                 <th scope="col">Categories</th>
                 <th scope="col">Edit</th>
+                <th scope="col">Delete</th>
             </tr>
         </thead>
         <tbody>
@@ -31,6 +32,7 @@
                     <td>${book.countOfPage}</td>
                     <td>${book.category.categoryName}</td>
                     <td><g:link action="edit" id="${book.id}">Edit</g:link></td>
+                    <td><g:link action="delete" id="${book.id}">Delete</g:link> </td>
                 </tr>
             </g:each>
         </tbody>

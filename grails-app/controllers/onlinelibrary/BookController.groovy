@@ -16,6 +16,7 @@ class BookController {
         if (category){
             category.addToBook(book)
         }
+        def categories = Category.list()
         book.save flush: true, failOnError: true
         redirect action: 'show', id: book.id
     }
@@ -39,13 +40,25 @@ class BookController {
         [books : bookList]
     }
 
+    def delete = {
+        def book = Book.get(params.id)
+        def category = Category.findById(params.id)
+        if (category){
+            book.removeFromCategory(category)
+        }
+        book.delete flush: true, failOnError: true
+        redirect action: 'index'
+    }
+
     def beforeInterceptor = [action:this.&auth]
 
     def auth() {
-        if( !(session?.user?.role == "admin") ){
+        if( !(session?.user?.role == "admin")){
             flash.message = "You must be an administrator to perform that task."
             redirect(controller: "user", action:"login")
             return false
         }
     }
+
+
 }

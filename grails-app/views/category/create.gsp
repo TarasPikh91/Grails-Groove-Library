@@ -14,14 +14,65 @@
 <body>
 <div class="container-fluid">
 <g:include view="index.gsp"/>
-<h2>Create new category</h2>
-<g:form action="save">
-    <div class="form-group">
-        <label for="categoryName">Category Name:</label>
-        <g:textField name="categoryName" class="form-control" id="categoryName"/>
+    <div class="row">
+    <div class="col-md-6">
+        <h2>Create new category</h2>
+        <g:form action="save" method="post" class="saveCategory">
+            <div class="form-group">
+                <label for="categoryName">Category Name:</label>
+                <g:textField name="categoryName" class="form-control requireField droppable" id="categoryName"/>
+            </div>
+            <g:actionSubmit value="Save" class="btn btn-default" id="button"/>
+        </g:form>
     </div>
-    <g:actionSubmit value="Save" class="btn btn-default"/>
-</g:form>
+    <div class="col-md-6">
+        <h2>Category to create:</h2>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">category name:</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Comedy</td>
+                </tr>
+            <tr>
+                <td>Drama</td>
+            </tr>
+            <tr>
+                <td>Romance</td>
+            </tr>
+            <tr>
+                <td>Mystery</td>
+            </tr>
+            <tr>
+                <td>Horror</td>
+            </tr>
+            <tr>
+                <td>Guide</td>
+            </tr>
+            <tr>
+                <td>Travel</td>
+            </tr>
+            <tr>
+                <td>Children</td>
+            </tr>
+            <tr>
+                <td>Health</td>
+            </tr>
+            <tr>
+                <td>Science</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 </div>
+</div>
+
+<g:javascript src="jquery-3.3.1.min.js"/>
+<g:javascript src="jquery.validate.min.js"/>
+<g:javascript src="jquery-ui.js"/>
+<g:javascript src="category/create.js"/>
 </body>
 </html>

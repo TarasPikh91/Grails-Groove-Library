@@ -5,31 +5,58 @@
   Time: 1:37 PM
 --%>
 
-<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ page import="onlinelibrary.Category" contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
     <title>Create Book</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="${createLinkTo(dir: 'css', file: 'jquery-ui.css')}">
 </head>
 <body>
 <div class="container-fluid">
     <g:include view="index.gsp"/>
-    <h2>Create new book</h2>
-    <g:form action="save" method="post">
-        <div class="form-group">
-            <lable for="title">Title:</lable>
-            <g:textField name="title" class="form-control" id="title"/>
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Create new book</h2>
+            <g:form action="save" method="post" class="saveBook">
+                <div class="form-group">
+                    <lable for="title">Title:</lable>
+                    <g:textField name="title" class="form-control requireField droppable" id="title"/>
+                </div>
+                <div class="form-group">
+                    <lable for="countOfPage">Count of page:</lable>
+                    <g:textField name="countOfPage" class="form-control requireField" id="countOfPage"/>
+                </div>
+                <div class="form-group">
+                    <lable for="category">Category:</lable>
+                    %{--<select name="category" class="form-control droppable" multiple="true" id="category"/>--}%
+                    <g:select from="${Category.list()}" optionKey="id" id="category" name="category" multiple="true" class="form-control requireField droppable"></g:select>
+                </div>
+                <g:actionSubmit value="Save" class="btn btn-default" id="button"/>
+            </g:form>
         </div>
-        <div class="form-group">
-            <lable for="countOfPage">Count of page:</lable>
-            <g:textField name="countOfPage" class="form-control" id="countOfPage"/>
+        <div class="col-md-6">
+            <h2>Categories</h2>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>category name:</th>
+                    </tr>
+                </thead>
+                <tbody>
+                <g:each in="${onlinelibrary.Category.list()}" var="category">
+                        <tr>
+                            <td class="draggable">${category.categoryName}</td>
+                        </tr>
+                </g:each>
+                </tbody>
+            </table>
         </div>
-        <div class="form-group">
-            <lable for="category">Category:</lable>
-            <g:select name="category" from="${onlinelibrary.Category.list()}" class="form-control" value="${book?.category}" optionKey="id" multiple="true" id="category"/>
-        </div>
-        <g:actionSubmit value="Save" class="btn btn-default"/>
-    </g:form>
+    </div>
 </div>
+<g:javascript src="jquery-3.3.1.min.js"/>
+<g:javascript src="jquery.validate.min.js"/>
+<g:javascript src="jquery-ui.js"/>
+<g:javascript src="book/create.js"/>
 </body>
 </html>

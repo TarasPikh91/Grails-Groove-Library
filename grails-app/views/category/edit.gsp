@@ -15,13 +15,16 @@
 <div class="container-fluid">
     <g:include view="index.gsp"/>
     <h2>Edit category</h2>
-    <g:form action="update" id="${category.id}">
+    <g:form action="update" id="${category.id}" class="updateCategory">
         <div class="form-group">
             <label for="categoryName">Category Name:</label>
-            <g:textField name="categoryName" class="form-control" id="categoryName" value="${category.categoryName}"/>
+            <g:textField name="categoryName" class="form-control requireField" id="categoryName" value="${category.categoryName}"/>
         </div>
-        <g:actionSubmit value="Update" class="btn btn-default"/>
+        <g:actionSubmit value="Update" class="btn btn-default" id="button"/>
     </g:form>
 </div>
+<g:javascript src="jquery-3.3.1.min.js"/>
+<g:javascript src="jquery.validate.min.js"/>
+<g:javascript src="category/edit.js"/>
 </body>
 </html>

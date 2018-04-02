@@ -10,8 +10,8 @@
 	<title></title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link type="text/css" href="${createLinkTo(dir:'css',file:'main.css')}" />
-	<script type="text/javascript" src="${createLinkTo(dir: 'js', file: 'jquery-3.3.1.min.js')}"></script>
-	<script type="text/javascript" src="${createLinkTo(dir: 'js', file: 'main.js')}"></script>
+	%{--<g:javascript src="jquery-3.3.1.min.js"/>--}%
+	%{--<g:javascript src="main.js"/>--}%
 </head>
 <body>
 <g:layoutBody/>
