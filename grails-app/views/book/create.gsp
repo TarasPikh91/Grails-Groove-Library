@@ -29,7 +29,6 @@
                 </div>
                 <div class="form-group">
                     <lable for="category">Category:</lable>
-                    %{--<select name="category" class="form-control droppable" multiple="true" id="category"/>--}%
                     <g:select from="${Category.list()}" optionKey="id" id="category" name="category" multiple="true" class="form-control requireField droppable"></g:select>
                 </div>
                 <g:actionSubmit value="Save" class="btn btn-default" id="button"/>
@@ -46,7 +45,7 @@
                 <tbody>
                 <g:each in="${onlinelibrary.Category.list()}" var="category">
                         <tr>
-                            <td class="draggable">${category.categoryName}</td>
+                            <td class="draggable" value="${category.id}">${category.categoryName}</td>
                         </tr>
                 </g:each>
                 </tbody>

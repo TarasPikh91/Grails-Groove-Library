@@ -41,10 +41,17 @@ $(document).ready(function () {
             $(this).fadeTo(0, 1);
         }
     });
+    $('#category option').hide();
+    $('#category option').addClass('categorySelect');
     $('.droppable').droppable({
         haveClass: 'active',
         drop: function (event, ui) {
-            //at this moment this part of code not work, but I will do it
+            $('.categorySelect').each(function () {
+                if($(this).text() == $(ui.draggable).text()){
+                   $(this).show();
+                   $(this).attr('selected','selected');
+                }
+            });
         }
     });
 });

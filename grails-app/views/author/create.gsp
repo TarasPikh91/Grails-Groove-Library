@@ -25,7 +25,7 @@
     </div>
         <div class="form-group">
         <label for="Books">Books:</label>
-                <g:select from="${onlinelibrary.Book.list()}" optionKey="id" name="book" class="form-control requireField" multiple="true" id="Books"/>
+                <g:select from="${onlinelibrary.Book.list()}" optionKey="id" name="book" class="form-control requireField droppable" multiple="true" id="Books"/>
         </div>
     <g:actionSubmit value="Save" class="btn btn-default" id="button"/>
 </g:form>
@@ -36,7 +36,7 @@
             <tbody>
                 <g:each in="${Book.list()}" var="book">
                  <tr>
-                     <td>${book.title}</td>
+                     <td class="draggable">${book.title}</td>
                 </tr>
                 </g:each>
             </tbody>
@@ -45,6 +45,7 @@
 </div>
 </div>
 <g:javascript src="jquery-3.3.1.min.js"/>
+<g:javascript src="jquery-ui.js"/>
 <g:javascript src="jquery.validate.min.js"/>
 <g:javascript src="author/create.js"/>
 </body>

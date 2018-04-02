@@ -27,5 +27,30 @@ $(document).ready(function () {
         });
     });
     //end validation
+
+    $('.draggable').draggable({
+        revert: true,
+        helper: 'clone',
+        start: function (event, ui) {
+            $(this).fadeTo('fast', 0.3);
+        },
+        stop: function (event, ui) {
+            $(this).fadeTo(0, 1);
+            $(this).hide();
+        }
+    });
+    $('#Books option').hide();
+    $('#Books option').addClass('bookSelected');
+    $('.droppable').droppable({
+        haveClass: 'active',
+        drop: function (event, ui) {
+            $('.bookSelected').each(function () {
+                if($(this).text() == $(ui.draggable).text()){
+                    $(this).show();
+                    $(this).attr('selected', 'selected');
+                }
+            });
+        }
+    });
 });
 
