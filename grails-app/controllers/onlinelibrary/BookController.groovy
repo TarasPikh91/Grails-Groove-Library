@@ -46,7 +46,10 @@ class BookController {
         if (category){
             book.removeFromCategory(category)
         }
-        book.delete flush: true, failOnError: true
+        if (book.getAuthor() != null){
+            redirect(controller: 'author', action: 'list')
+        }
+                book.delete flush: true, failOnError: true
         redirect action: 'index'
     }
 

@@ -1,4 +1,15 @@
 $(document).ready(function () {
+    $(function () {
+        $("input[name='title'], input[name='countOfPage'], select[name='category']").focus(function () {
+            $(this).css({
+                'background-color': '#f8f9fa',
+                'border-color': '#3131f7',
+                'font-style':'italic'
+            });
+        });
+    });
+
+
     //validation
     $(function () {
         $(".saveBook").validate({
@@ -24,23 +35,28 @@ $(document).ready(function () {
                 $(this).removeClass('emptyField');
             }else{
                 $(this).addClass('emptyField');
-                $('.emptyField').css('border-color', 'red');
+                $('.emptyField').css({
+                    'border-color': 'red',
+                    'background-color': '#f4c6c6'
+                });
             }
-        })
-    })
+        });
+    });
 
     //end validation
-
+    //start drag and drop block
     $('.draggable').draggable({
         revert: true,
         helper: 'clone',
         start: function (event, ui) {
-            $(this).fadeTo('fast', 0.5);
+            $(this).fadeTo('fast', 0.3);
         },
         stop: function (event, ui) {
             $(this).fadeTo(0, 1);
+            $(this).hide();
         }
     });
+
     $('#category option').hide();
     $('#category option').addClass('categorySelect');
     $('.droppable').droppable({
@@ -54,4 +70,5 @@ $(document).ready(function () {
             });
         }
     });
+    //end drag and drop function
 });

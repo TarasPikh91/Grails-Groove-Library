@@ -43,9 +43,9 @@
                     </tr>
                 </thead>
                 <tbody>
-                <g:each in="${onlinelibrary.Category.list()}" var="category">
+                <g:each in="${Category.list()}" var="category">
                         <tr>
-                            <td class="draggable" value="${category.id}">${category.categoryName}</td>
+                            <td class="draggable">${category.categoryName}</td>
                         </tr>
                 </g:each>
                 </tbody>
@@ -54,8 +54,8 @@
     </div>
 </div>
 <g:javascript src="jquery-3.3.1.min.js"/>
-<g:javascript src="jquery.validate.min.js"/>
 <g:javascript src="jquery-ui.js"/>
+<g:javascript src="jquery.validate.min.js"/>
 <g:javascript src="book/create.js"/>
 </body>
 </html>

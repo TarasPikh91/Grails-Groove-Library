@@ -5,7 +5,6 @@ class Book {
     int id
     String title
     int countOfPage
-//    static belongsTo = [Author]
     static hasMany = [category: Category]
 
     static constraints = {

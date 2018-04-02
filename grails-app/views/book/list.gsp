@@ -27,7 +27,7 @@
         </thead>
         <tbody>
             <g:each in="${books}" var="book">
-                <tr>
+                <tr class="bookList">
                     <td>${book.title}</td>
                     <td>${book.countOfPage}</td>
                     <td>${book.category.categoryName}</td>
@@ -39,5 +39,7 @@
     </table>
     <button type="button" class="btn btn-default"><g:link action="create">Add new book</g:link></button>
 </div>
+<g:javascript src="jquery-3.3.1.min.js"/>
+<g:javascript src="book/list.js"/>
 </body>
 </html>

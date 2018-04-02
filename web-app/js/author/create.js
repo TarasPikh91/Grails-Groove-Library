@@ -1,4 +1,12 @@
 $(document).ready(function () {
+    $(function () {
+        $("input[name='fullName'], select[name='book']").focus(function () {
+            $(this).css({
+                'background-color':'#f8f9fa',
+                'border-color':'#60e588'
+            });
+        });
+    });
 
     //validation
     $(function () {
@@ -22,7 +30,10 @@ $(document).ready(function () {
                 $(this).removeClass('emptyField');
             }else{
                 $(this).addClass('emptyField');
-                $('.emptyField').css('border-color', 'red');
+                $('.emptyField').css({
+                    'border-color': 'red',
+                    'background-color': '#f7aaaa'
+                });
             }
         });
     });

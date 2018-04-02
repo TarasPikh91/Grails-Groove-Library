@@ -26,7 +26,7 @@
         </thead>
         <tbody>
         <g:each in="${authors}" var="author">
-            <tr>
+            <tr class="authorRow">
                 <td>${author.fullName}</td>
                 <td>${author.book.title}</td>
                 <td><g:link action="edit" id="${author.id}">Edit</g:link></td>
@@ -37,5 +37,7 @@
     </table>
     <button type="button" class="btn btn-default"><g:link action="create">Add new author</g:link></button>
 </div>
+<g:javascript src="jquery-3.3.1.min.js"/>
+<g:javascript src="author/list.js"/>
 </body>
 </html>

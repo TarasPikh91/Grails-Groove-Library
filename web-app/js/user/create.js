@@ -1,4 +1,3 @@
-$(function () {
     $(document).ready(function () {
         $('.createUser').validate({
             rules: {
@@ -22,7 +21,5 @@ $(function () {
                 $(this).addClass('emptyField');
                 $('.emptyField').css('border-color', 'red');
             }
-        })
-    })
-
-});
+        });
+    });

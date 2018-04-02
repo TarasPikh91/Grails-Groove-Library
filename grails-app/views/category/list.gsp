@@ -25,7 +25,7 @@
     </thead>
     <tbody>
         <g:each in="${categories}" var="category">
-            <tr>
+            <tr class="tableBody">
                 <td>${category.categoryName}</td>
                 <td><g:link action="edit" id="${category.id}">Edit</g:link></td>
                 <td><g:link action="delete" id="${category.id}">Delete</g:link></td>
@@ -35,5 +35,7 @@
 </table>
 <button type="button" class="btn btn-default"><g:link action="create">Create new category</g:link></button>
 </div>
+<g:javascript src="jquery-3.3.1.min.js"/>
+<g:javascript src="category/list.js"/>
 </body>
 </html>

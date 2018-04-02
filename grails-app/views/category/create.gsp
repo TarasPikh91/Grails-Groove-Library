@@ -5,7 +5,7 @@
   Time: 9:20 PM
 --%>
 
-<%@ page contentType="text/html;charset=UTF-8" %>
+<%@ page import="onlinelibrary.Category" contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
     <title>Create new Category</title>

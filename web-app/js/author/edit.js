@@ -1,4 +1,13 @@
 $(document).ready(function () {
+    $(function () {
+        $("input[name='fullName'], select[name='book']").focus(function () {
+            $(this).css({
+                'background-color':'#f8f9fa',
+                'border-color':'#f4c6c6'
+            });
+        });
+    });
+
     $('.updateAuthor').validate({
         rules: {
             fullName: 'required',

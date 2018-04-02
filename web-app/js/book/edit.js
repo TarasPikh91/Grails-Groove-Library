@@ -1,5 +1,15 @@
 $(document).ready(function () {
     $(function () {
+        $("input[name='title'], input[name='countOfPage'], select[name='category']").focus(function () {
+            $(this).css({
+                'background-color': '#f8f9fa',
+                'border-color': '#3131f7',
+                'font-style':'italic'
+            });
+        });
+    });
+
+    $(function () {
         $('.updateBook').validate({
             rules: {
                 title: 'required',

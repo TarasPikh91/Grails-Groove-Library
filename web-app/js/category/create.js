@@ -1,14 +1,22 @@
 $(document).ready(function () {
+    $(function () {
+        $("input[name='categoryName']").focus(function () {
+            $(this).css('background-color','#f8f9fa');
+        })
+    })
+
    $(function () {
-       $('.saveCategory').validate({
-           rules: {
-               categoryName: 'required'
-           },
-           messages: {
-               categoryName: '<span style="color: red">fill categoryName input</span>'
-           }
-       });
-   });
+        $('.saveCategory').validate({
+            rules: {
+                categoryName: {
+                    required: true
+                }
+            },
+            messages: {
+                categoryName: '<span style="color: red">fill categoryName input</span>'
+            }
+        });
+    });
 
    $('#button').on('click', function () {
        $('.saveCategory .requireField').each(function () {
@@ -16,7 +24,11 @@ $(document).ready(function () {
                $(this).removeClass('emptyField');
            }else{
                $(this).addClass('emptyField');
-               $('.emptyField').css('border-color', 'red');
+               $('.emptyField').css({
+                   'border-color': 'red',
+                   'background-color': '#f2c6c6'
+               })
+
            }
        });
    });
@@ -39,13 +51,8 @@ $(document).ready(function () {
 
     $('.droppable').droppable({
         haveClass: 'active',
-        // accept: '#draggable',
         drop: function (event, ui) {
             this.value = $(ui.draggable).text();
-
-
         }
-    })
-
-
+    });
 });

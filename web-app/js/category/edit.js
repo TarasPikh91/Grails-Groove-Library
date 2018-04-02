@@ -1,5 +1,10 @@
 $(document).ready(function () {
     $(function () {
+        $("input[name='categoryName']").focus(function () {
+            $(this).css('background-color', '#f8f9fa');
+        })
+    })
+    $(function () {
         $('.updateCategory').validate({
             rules: {
                 categoryName: 'required'
