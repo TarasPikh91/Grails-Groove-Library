@@ -2,45 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="76cb694e-2b89-4c1c-b6cf-560fe0e3881f" name="Default" comment="second commit">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/grails-app/views/user/create.gsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/css/jquery-ui.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/author/create.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/author/edit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/book/create.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/book/edit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/category/create.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/category/edit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery-ui.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/jquery.validate.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/user/create.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web-app/js/validate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/onlinelibrary/AuthorController$_closure3.class" afterPath="$PROJECT_DIR$/target/classes/onlinelibrary/AuthorController$_closure3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/onlinelibrary/AuthorController.class" afterPath="$PROJECT_DIR$/target/classes/onlinelibrary/AuthorController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/onlinelibrary/BookController$_closure3.class" afterPath="$PROJECT_DIR$/target/classes/onlinelibrary/BookController$_closure3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/onlinelibrary/BookController$_closure4.class" afterPath="$PROJECT_DIR$/target/classes/onlinelibrary/BookController$_closure4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/onlinelibrary/BookController$_closure5.class" afterPath="$PROJECT_DIR$/target/classes/onlinelibrary/BookController$_closure5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/onlinelibrary/BookController$_closure6.class" afterPath="$PROJECT_DIR$/target/classes/onlinelibrary/BookController$_closure6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/onlinelibrary/BookController$_closure7.class" afterPath="$PROJECT_DIR$/target/classes/onlinelibrary/BookController$_closure7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/onlinelibrary/BookController$_closure8.class" afterPath="$PROJECT_DIR$/target/classes/onlinelibrary/BookController$_closure8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/onlinelibrary/BookController.class" afterPath="$PROJECT_DIR$/target/classes/onlinelibrary/BookController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/onlinelibrary/UserController$_closure3.class" afterPath="$PROJECT_DIR$/target/classes/onlinelibrary/UserController$_closure3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/onlinelibrary/UserController$_closure4.class" afterPath="$PROJECT_DIR$/target/classes/onlinelibrary/UserController$_closure4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/onlinelibrary/UserController.class" afterPath="$PROJECT_DIR$/target/classes/onlinelibrary/UserController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/onlinelibrary/AuthorController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/onlinelibrary/AuthorController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/onlinelibrary/BookController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/onlinelibrary/BookController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/controllers/onlinelibrary/UserController.groovy" afterPath="$PROJECT_DIR$/grails-app/controllers/onlinelibrary/UserController.groovy" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/author/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/author/create.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/author/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/author/edit.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/book/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/book/create.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/book/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/book/edit.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/book/list.gsp" afterPath="$PROJECT_DIR$/grails-app/views/book/list.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/category/create.gsp" afterPath="$PROJECT_DIR$/grails-app/views/category/create.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/category/edit.gsp" afterPath="$PROJECT_DIR$/grails-app/views/category/edit.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" afterPath="$PROJECT_DIR$/grails-app/views/layouts/main.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grails-app/views/user/login.gsp" afterPath="$PROJECT_DIR$/grails-app/views/user/login.gsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/stacktrace.log" afterPath="$PROJECT_DIR$/target/stacktrace.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web-app/js/main.js" afterPath="$PROJECT_DIR$/web-app/js/main.js" />
     </list>
     <ignored path="$PROJECT_DIR$/target/eclipseclasses/" />
     <ignored path="$USER_HOME$/.grails/" />
@@ -89,23 +51,13 @@
       <file leaf-file-name="create.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web-app/js/book/create.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="35" column="24" lean-forward="true" selection-start-line="35" selection-start-column="24" selection-end-line="36" selection-end-column="37" />
+            <state relative-caret-position="407">
+              <caret line="46" column="60" lean-forward="false" selection-start-line="46" selection-start-column="60" selection-end-line="46" selection-end-column="60" />
               <folding>
                 <marker date="1522651849209" expanded="true" signature="392:402" ph="..." />
                 <marker date="1522651849209" expanded="true" signature="473:483" ph="..." />
                 <marker date="1522651849209" expanded="true" signature="564:574" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="create.gsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/views/author/create.gsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="38" column="24" lean-forward="false" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -186,9 +138,9 @@
         <option value="$PROJECT_DIR$/web-app/js/category/create.js" />
         <option value="$PROJECT_DIR$/grails-app/views/user/create.gsp" />
         <option value="$PROJECT_DIR$/web-app/js/user/create.js" />
-        <option value="$PROJECT_DIR$/web-app/js/author/create.js" />
         <option value="$PROJECT_DIR$/grails-app/views/author/create.gsp" />
         <option value="$PROJECT_DIR$/web-app/js/book/create.js" />
+        <option value="$PROJECT_DIR$/web-app/js/author/create.js" />
       </list>
     </option>
   </component>
@@ -199,8 +151,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="218" />
-    <option name="y" value="353" />
+    <option name="x" value="419" />
+    <option name="y" value="237" />
     <option name="width" value="928" />
     <option name="height" value="384" />
   </component>
@@ -275,6 +227,20 @@
               <item name="OnlineLibrary" type="462c0819:PsiDirectoryNode" />
               <item name="web-app" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OnlineLibrary" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OnlineLibrary" type="462c0819:PsiDirectoryNode" />
+              <item name="web-app" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="author" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OnlineLibrary" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OnlineLibrary" type="462c0819:PsiDirectoryNode" />
+              <item name="web-app" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="book" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -439,19 +405,26 @@
       <workItem from="1522561562596" duration="3295000" />
       <workItem from="1522597820671" duration="10026000" />
       <workItem from="1522611134548" duration="6756000" />
-      <workItem from="1522648920097" duration="2199000" />
+      <workItem from="1522648920097" duration="2972000" />
     </task>
+    <task id="LOCAL-00001" summary="second commit">
+      <created>1522652257794</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1522652257794</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131526000" />
+    <option name="totallyTimeSpent" value="132299000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="1.0" sideWeight="0.5046083" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -469,9 +442,9 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8667763" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.77220076" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31414473" sideWeight="0.4953917" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30711043" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30711043" sideWeight="0.5" order="7" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -900,6 +873,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/views/author/create.gsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="38" column="24" lean-forward="false" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web-app/js/author/create.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
@@ -911,18 +892,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/views/author/create.gsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="38" column="24" lean-forward="false" selection-start-line="38" selection-start-column="24" selection-end-line="38" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web-app/js/book/create.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="35" column="24" lean-forward="true" selection-start-line="35" selection-start-column="24" selection-end-line="36" selection-end-column="37" />
+        <state relative-caret-position="407">
+          <caret line="46" column="60" lean-forward="false" selection-start-line="46" selection-start-column="60" selection-end-line="46" selection-end-column="60" />
           <folding>
             <marker date="1522651849209" expanded="true" signature="392:402" ph="..." />
             <marker date="1522651849209" expanded="true" signature="473:483" ph="..." />
